@@ -1,11 +1,10 @@
 import React, { Component } from 'react'
+import { Segment } from 'semantic-ui-react'
 
 export default class Header extends Component {
     render() {
         return (
-            <div id="header">
-                I'm a header !
-            </div>
+            <Segment inverted id="header">I'm a header !</Segment>
         )
     }
 }
