@@ -1,6 +1,6 @@
 import React from 'react';
 import Header from './../../components/header.jsx';
-import { Statistic, Icon, Table, Divider } from 'semantic-ui-react';
+import { Statistic, Icon, Grid, Divider } from 'semantic-ui-react';
 import { Doughnut } from 'react-chartjs-2';
 import './styles.css';
 
@@ -38,7 +38,7 @@ export default class SpendingSummary extends React.Component {
             }],
             labels: [
                 'Gas - British Gas',
-                'Electricity - Octupus Energy',
+                'Electricity',
                 'Water'
             ]
           }
@@ -72,25 +72,25 @@ export default class SpendingSummary extends React.Component {
   generateSummaryList = () => (
     this.state.summary.map((item, i) => (
       <React.Fragment key={i}>
-        <Table.Row>
-          <Table.Cell width={1}>
+        <Grid.Row>
+          <Grid.Column width={2}>
             <Icon bordered name={item.icon} color={item.iconColor} />
-          </Table.Cell>
-          <Table.Cell width={8} style={{textAlign: 'left'}}>
+          </Grid.Column>
+          <Grid.Column width={8} style={{textAlign: 'left', fontSize: '20px'}}>
             {item.category}
-          </Table.Cell>
-          <Table.Cell width={7}>
+          </Grid.Column>
+          <Grid.Column width={3} style={{fontSize: '20px'}}>
             £{item.amount}
-          </Table.Cell>
-        </Table.Row>
-        <Table.Row>
-          <Table.Cell width={1}></Table.Cell>
-          <Table.Cell width={14}>
-            <Doughnut data={item.carbonEmission} options={this.state.chartOptions} />
-            {/* {item.carbonEmission} */}
-          </Table.Cell>
-          <Table.Cell width={1}></Table.Cell>
-        </Table.Row>
+          </Grid.Column>
+        </Grid.Row>
+        <Grid.Row>
+          <Grid.Column width={1}></Grid.Column>
+          <Grid.Column width={14}>
+            <Doughnut data={item.carbonEmission} options={this.state.chartOptions}  />
+          </Grid.Column>
+          <Grid.Column width={1}></Grid.Column>
+        </Grid.Row>
+        <Divider />
       </React.Fragment>
     ))
   )
@@ -101,19 +101,15 @@ export default class SpendingSummary extends React.Component {
         <Header /> 
         <center>
           <Statistic
-            size='huge'
+            size='large'
             style={{marginTop: '5%', marginBottom: '5%'}}
-            label='Rolling Monthly Spent'
+            label='Rolling Monthly Spend'
             value='£1,550'
           />
-          <br />
           <Divider />
-          <br />
-          <Table style={{width: '95vw', fontSize: '16px', border:'none', marginTop: '10%', marginBottom: '10%'}}>
-            <Table.Body>
-              {this.generateSummaryList()}
-            </Table.Body>
-          </Table>
+          <Grid style={{width: '90vw', backgroundColor:'white', border:'none', marginTop: '10%', marginBottom: '10%'}}>
+            {this.generateSummaryList()}
+          </Grid>
         </center>
       </div>
     );
