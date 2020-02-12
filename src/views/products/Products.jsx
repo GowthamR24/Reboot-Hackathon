@@ -8,19 +8,19 @@ export default class Products extends React.Component {
     this.state = {
       products: [
         {
-          imageUrl: './../src/images/lbg current account.png',
+          imageUrl: '/images/lbg current account.png',
           productName: 'Money Tree Rewards Current Account',
           productDesc: 'Earn points based on sustainable spending',
           onboardedCustomers: '50000+ Customers '
         },
         {
-          imageUrl: './../src/images/lbgcc.png',
+          imageUrl: '/images/lbgcc.png',
           productName: 'Money Tree Rewards Credit Card',
           productDesc: 'Earn points based on sustainable spending',
           onboardedCustomers: '15000+ Customers '
         },
         {
-          imageUrl: './../src/images/LBGtoxic.pnglbg mortgage.png',
+          imageUrl: '/images/LBGtoxic.pnglbg mortgage.png',
           productName: 'Money Tree Mortgage',
           productDesc: 'Best rates for more efficient homes',
           onboardedCustomers: '2000+ Customers '
