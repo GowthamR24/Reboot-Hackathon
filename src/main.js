@@ -6,12 +6,20 @@ import {
     Route
   } from "react-router-dom"
 import Main from './views/main.jsx'
-import './css/styles.css' 
+import './css/styles.css';
+
+import { SpendingSummary, Products } from './views/index.js';
 
 ReactDom.render(<Router>
                     <Switch>
                     <Route exact path="/">
-                            <Main />
+                            {/* <Main /> */}
+                            {/* <SpendingSummary /> */}
+                            <Products />
+                    </Route>
+                    <Route path="/spendings">
+                      <SpendingSummary />
                     </Route>
                     </Switch>
-                    </Router>,document.getElementById("app"));
+                    </Router>,
+                    document.getElementById("app"));
