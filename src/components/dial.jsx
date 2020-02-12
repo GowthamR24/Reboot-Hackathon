@@ -99,9 +99,11 @@ export default class Dial extends Component {
         <p style={{fontSize:'18px'}}>We want to help you get there too !</p>
         <center style={{marginTop:'15%'}}>
             <Link to='/spendings'>
-            <Button primary style={{width:"218px"}}>View Score Breakdown</Button><br/><br/>
+            <Button primary style={{width:"195px"}}>View Score Breakdown</Button><br/><br/>
             </Link>
-            <Button style={{backgroundColor:"#006A4D",color:"white"}}>Recommendations Products</Button>
+            <Link to='/products'>
+            <Button style={{backgroundColor:"#006A4D",color:"white"}}>Recommended Products</Button>
+            </Link>
         </center>
         </Segment>
           </div>
