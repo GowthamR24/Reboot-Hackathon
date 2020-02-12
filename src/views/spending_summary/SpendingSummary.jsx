@@ -76,10 +76,10 @@ export default class SpendingSummary extends React.Component {
           <Grid.Column width={2}>
             <Icon bordered name={item.icon} color={item.iconColor} />
           </Grid.Column>
-          <Grid.Column width={8} style={{textAlign: 'left', fontSize: '20px'}}>
+          <Grid.Column width={10} style={{textAlign: 'left', fontSize: '20px'}}>
             {item.category}
           </Grid.Column>
-          <Grid.Column width={3} style={{fontSize: '20px'}}>
+          <Grid.Column width={4} style={{fontSize: '20px'}}>
             £{item.amount}
           </Grid.Column>
         </Grid.Row>

@@ -68,19 +68,19 @@ export default class Dial extends Component {
                         fluidWidth={true} 
                         startColor="#F44336" 
                         endColor="#4CAF50" 
-                        value={900} 
+                        value={300} 
                         height={200} 
                         width={500}
                         needleTransitionDuration={4000}/>
-                        <Image src="./../src/images/LBGtoxic.png" style={{width: "50px",position:"relative",left:"7%",top:"-35px"}}/>
-                        <Image src="./../src/images/LBGtreegreen.png" style={{width: "50px",position:"relative",left:"62%",top:"-35px"}}/>
-                        <center style={{position: "relative",top: "0px"}}>
+                        <Image src="/images/Dialtoxicsign.png" style={{width: "40px",position:"relative",left:"8%",top:"-80px"}}/>
+                        <Image src="/src/images/Dialgreentree.png" style={{width: "40px",position:"relative",left:"66%",top:"-80px"}}/>
+                        <center style={{position: "relative",top: "-20px"}}>
                             <h3 style={{fontSize:'12px'}}>Your carbon emission score for the past 6 months</h3>
                         </center>
                     </div>
                     <div>
-                    <Line data={data} />
-                    <center style={{marginTop:'6%'}}>
+                    <Line data={data} style={{marginTop:'6%'}}/>
+                    <center style={{marginTop:'14%'}}>
                             <h3 style={{fontSize:'12px'}}>Your carbon emission score trended over time</h3>
                         </center>
                     </div>
@@ -94,17 +94,17 @@ export default class Dial extends Component {
               </Card.Description>
             </Card.Content>
           </Card>
-        <Segment style={{margin:'2% 2% 10% 2%',padding:'5%'}}>
+        <Segment style={{margin:'2% 2% 10% 2%',padding:'5%',textAlign:'center'}}>
         <Header as='h1' style={{fontSize:'25px'}}>What does this score mean ?</Header>
         <p style={{fontSize:'15px',marginTop:'3%'}}>This score indicates how close you are to acheiveing net-zero carbon emission status. </p>
         <p style={{fontSize:'15px'}}>net-zero is the commitment set by UK government to acheive by 2050.</p>
         <p style={{fontSize:'18px'}}>We want to help you get there too !</p>
-        <center style={{marginTop:'15%'}}>
+        <center style={{marginTop:'5%'}}>
             <Link to='/spendings'>
-            <Button primary style={{width:"195px"}}>View Score Breakdown</Button><br/><br/>
+            <Button primary style={{width:"195px"}}>View Score Breakdown</Button>
             </Link>
             <Link to='/products'>
-            <Button style={{backgroundColor:"#006A4D",color:"white"}}>Recommended Products</Button>
+            <Button style={{backgroundColor:"#006A4D",color:"white",marginTop:'2%'}}>Recommended Products</Button>
             </Link>
         </center>
         </Segment>
