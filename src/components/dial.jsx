@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Card,Icon,Grid,Button,Header, Segment } from 'semantic-ui-react'
+import { Card,Icon,Grid,Button,Header, Segment,Image} from 'semantic-ui-react'
 import ReactSpeedometer from "react-d3-speedometer"
 import SwipeableViews from 'react-swipeable-views'
 import {Line} from 'react-chartjs-2';
@@ -68,10 +68,12 @@ export default class Dial extends Component {
                         fluidWidth={true} 
                         startColor="#F44336" 
                         endColor="#4CAF50" 
-                        value={300} 
+                        value={900} 
                         height={200} 
                         width={500}
                         needleTransitionDuration={4000}/>
+                        <Image src="./../src/images/LBGtoxic.png" style={{width: "50px",position:"relative",left:"7%",top:"-35px"}}/>
+                        <Image src="./../src/images/LBGtreegreen.png" style={{width: "50px",position:"relative",left:"62%",top:"-35px"}}/>
                         <center style={{position: "relative",top: "0px"}}>
                             <h3 style={{fontSize:'12px'}}>Your carbon emission score for the past 6 months</h3>
                         </center>

@@ -101,7 +101,7 @@ export default class SpendingSummary extends React.Component {
         <Header /> 
         <center>
           <Statistic
-            size='large'
+            size='big'
             style={{marginTop: '5%', marginBottom: '5%'}}
             label='Rolling Monthly Spend'
             value='£1,550'
