@@ -36,7 +36,7 @@ export default class Products extends React.Component {
         productName={item.productName}
         productDesc={item.productDesc}
         onboardedCustomers={item.onboardedCustomers}
-        style={{width: '75vw', height: '400px'}}
+        style={{width: '75vw', height: '340px'}}
       />
     ))
   )
@@ -46,7 +46,7 @@ export default class Products extends React.Component {
         <Header />
         <center>
           <div>
-            <h1 style={{fontSize: '45px'}}>Green Products</h1>
+            <h1 style={{fontSize: '32px'}}>Green Products</h1>
             <p style={{fontSize: '15px'}}>Here we list some of our green products</p>
           </div>
           <br />
