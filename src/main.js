@@ -13,9 +13,7 @@ import { SpendingSummary, Products } from './views/index.js';
 ReactDom.render(<Router>
                     <Switch>
                     <Route exact path="/">
-                            {/* <Main /> */}
-                            {/* <SpendingSummary /> */}
-                            <Products />
+                            <Main />
                     </Route>
                     <Route path="/spendings">
                       <SpendingSummary />
