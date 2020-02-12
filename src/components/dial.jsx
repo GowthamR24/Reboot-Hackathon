@@ -3,7 +3,7 @@ import { Card,Icon,Grid,Button,Header, Segment } from 'semantic-ui-react'
 import ReactSpeedometer from "react-d3-speedometer"
 import SwipeableViews from 'react-swipeable-views'
 import {Line} from 'react-chartjs-2';
-
+import { Link } from "react-router-dom";
 const data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
     datasets: [
@@ -98,7 +98,9 @@ export default class Dial extends Component {
         <p style={{fontSize:'24px'}}>net-zero is the commitment set by UK government to acheive by 2050.</p>
         <p style={{fontSize:'28px'}}>We want to help you get there too !</p>
         <center style={{marginTop:'15%'}}>
+            <Link to='/spendings'>
             <Button primary size="massive">View Score Breakdown</Button><br/><br/>
+            </Link>
             <Button style={{backgroundColor:"#006A4D",color:"white",width:"320px"}} size="massive">Recommendations</Button>
         </center>
         </Segment>
