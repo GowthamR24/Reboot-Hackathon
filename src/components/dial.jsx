@@ -68,12 +68,12 @@ export default class Dial extends Component {
                         fluidWidth={true} 
                         startColor="#F44336" 
                         endColor="#4CAF50" 
-                        value={300} 
+                        value={900} 
                         height={200} 
                         width={500}
                         needleTransitionDuration={4000}/>
-                        <Image src="/images/Dialtoxicsign.png" style={{width: "40px",position:"relative",left:"8%",top:"-80px"}}/>
-                        <Image src="/src/images/Dialgreentree.png" style={{width: "40px",position:"relative",left:"66%",top:"-80px"}}/>
+                        <Image src="./../src/images/Dialtoxicsign.png" style={{width: "40px",position:"relative",left:"8%",top:"-80px"}}/>
+                        <Image src="./../src/images/Dialgreentree.png" style={{width: "40px",position:"relative",left:"66%",top:"-80px"}}/>
                         <center style={{position: "relative",top: "-20px"}}>
                             <h3 style={{fontSize:'12px'}}>Your carbon emission score for the past 6 months</h3>
                         </center>
