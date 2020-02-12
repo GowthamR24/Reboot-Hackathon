@@ -1,7 +1,7 @@
 {
-  "name": "react-boilerplate",
+  "name": "moneytree",
   "version": "1.0.0",
-  "description": "Boilerplate for developing React Application using semantic ui library",
+  "description": "MoneyTree",
   "main": "index.js",
   "scripts": {
       "start": "webpack-dev-server --hot --mode development",
