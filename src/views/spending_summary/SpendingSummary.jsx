@@ -109,7 +109,7 @@ export default class SpendingSummary extends React.Component {
           <br />
           <Divider />
           <br />
-          <Table style={{width: '70vw', fontSize: '32px', border:'none', marginTop: '10%', marginBottom: '10%'}}>
+          <Table style={{width: '95vw', fontSize: '16px', border:'none', marginTop: '10%', marginBottom: '10%'}}>
             <Table.Body>
               {this.generateSummaryList()}
             </Table.Body>

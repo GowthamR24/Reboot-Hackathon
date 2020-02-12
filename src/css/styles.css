@@ -1,24 +1,21 @@
 #header{
-    font-size: 30px;
+    font-size: 24px;
     border-radius: 0px;
     background-color:  #006A4D;
-    height: 5vh;
+    height: 2vh;
 }
 
 .speedometer{
     width:100%;
-    height:500px !important;
-    margin-top: 6%;
+    height:200px !important;
 }
 
 .chartjs-render-monitor{
     display: block;
-    height: 450px !important;
-    width: 692px !important;
-    margin-left: -1%;
-    margin-top: 4%;
-}
+    height: 200px !important;
+    width: 100% !important;
+} 
 
 .current-value{
-    font-size: 70px !important;
+    font-size: 26px !important;
 }

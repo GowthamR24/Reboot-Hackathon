@@ -5,7 +5,7 @@ import SwipeableViews from 'react-swipeable-views'
 import {Line} from 'react-chartjs-2';
 import { Link } from "react-router-dom";
 const data = {
-    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'],
     datasets: [
       {
         label: 'Carbon Index Timeline',
@@ -51,15 +51,15 @@ export default class Dial extends Component {
     render() {
         return (
             <div>
-            <Card style={{height:'100%',width:'97%',margin:'2%'}}>
+            <Card style={{height:'100%',width:'98%',margin:'1%'}}>
             <Card.Content>
               <Card.Description>
               <Grid>
-                <Grid.Row>
-                <Grid.Column width={2}>
-                    <Icon name="angle left" style={{marginTop:'300%',textAlign:'center',cursor:'pointer'}} size="big" onClick={this.handleChange.bind(this)}/>
+                <Grid.Row >
+                <Grid.Column width={1} style={{padding:'0px'}}>
+                    <Icon name="angle left" style={{marginTop:'300%',textAlign:'center',cursor:'pointer'}} size="large" onClick={this.handleChange.bind(this)}/>
                 </Grid.Column>
-                <Grid.Column width={12}>
+                <Grid.Column width={14} style={{padding:'0px'}}>
                 <SwipeableViews index={this.state.index}>
                     <div>
                         <ReactSpeedometer 
@@ -69,23 +69,23 @@ export default class Dial extends Component {
                         startColor="#F44336" 
                         endColor="#4CAF50" 
                         value={300} 
-                        height={300} 
+                        height={200} 
                         width={500}
                         needleTransitionDuration={4000}/>
-                        <center style={{position: "relative",top: "-35px"}}>
-                            <h3 style={{fontSize:'32px'}}>Your CO2 score for the past 6 months</h3>
+                        <center style={{position: "relative",top: "0px"}}>
+                            <h3 style={{fontSize:'12px'}}>Your carbon emission score for the past 6 months</h3>
                         </center>
                     </div>
                     <div>
                     <Line data={data} />
-                    <center style={{marginTop:'6%',fontSize:'32px'}}>
-                            <h3 style={{fontSize:'32px'}}>Your CO2 score trended over time</h3>
+                    <center style={{marginTop:'6%'}}>
+                            <h3 style={{fontSize:'12px'}}>Your carbon emission score trended over time</h3>
                         </center>
                     </div>
               </SwipeableViews>
                 </Grid.Column>
-                <Grid.Column width={2}>
-                    <Icon name="angle right" style={{marginTop:'300%',textAlign:'right',marginLeft:'30%',cursor:'pointer'}} size="big" onClick={this.handleChange.bind(this)}/>
+                <Grid.Column width={1} style={{padding:'0px'}}>
+                    <Icon name="angle right" style={{marginTop:'300%',cursor:'pointer'}} size="large" onClick={this.handleChange.bind(this)}/>
                 </Grid.Column>
              </Grid.Row>
              </Grid>
@@ -93,15 +93,15 @@ export default class Dial extends Component {
             </Card.Content>
           </Card>
         <Segment style={{margin:'2% 2% 10% 2%',padding:'5%'}}>
-        <Header as='h1' style={{fontSize:'36px'}}>What does this score mean ?</Header>
-        <p style={{fontSize:'24px',marginTop:'3%'}}>This score indicates how close you are to acheiveing net-zero carbon emission status. </p>
-        <p style={{fontSize:'24px'}}>net-zero is the commitment set by UK government to acheive by 2050.</p>
-        <p style={{fontSize:'28px'}}>We want to help you get there too !</p>
+        <Header as='h1' style={{fontSize:'25px'}}>What does this score mean ?</Header>
+        <p style={{fontSize:'15px',marginTop:'3%'}}>This score indicates how close you are to acheiveing net-zero carbon emission status. </p>
+        <p style={{fontSize:'15px'}}>net-zero is the commitment set by UK government to acheive by 2050.</p>
+        <p style={{fontSize:'18px'}}>We want to help you get there too !</p>
         <center style={{marginTop:'15%'}}>
             <Link to='/spendings'>
-            <Button primary size="massive">View Score Breakdown</Button><br/><br/>
+            <Button primary style={{width:"218px"}}>View Score Breakdown</Button><br/><br/>
             </Link>
-            <Button style={{backgroundColor:"#006A4D",color:"white",width:"320px"}} size="massive">Recommendations</Button>
+            <Button style={{backgroundColor:"#006A4D",color:"white"}}>Recommendations Products</Button>
         </center>
         </Segment>
           </div>
