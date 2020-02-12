@@ -1,7 +1,8 @@
 import React from 'react';
+import { Card, Icon, Image } from 'semantic-ui-react';
 
-const productCards = ({ imageUrl, productName, productDesc, optedCustomers }) => (
-  <Card>
+const productCards = ({ imageUrl, productName, productDesc, onboardedCustomers, style }) => (
+  <Card style={style}>
     <Image src={imageUrl} wrapped ui={false} />
     <Card.Content>
       <Card.Header>{productName}</Card.Header>
@@ -11,7 +12,7 @@ const productCards = ({ imageUrl, productName, productDesc, optedCustomers }) =>
     </Card.Content>
     <Card.Content extra>
       <Icon name='user' />
-      {optedCustomers} opted!
+      {onboardedCustomers} onboarded!
         </Card.Content>
   </Card>
 );
