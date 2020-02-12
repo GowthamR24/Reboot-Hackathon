@@ -80,7 +80,7 @@ export default class Dial extends Component {
                     </div>
                     <div>
                     <Line data={data} style={{marginTop:'6%'}}/>
-                    <center style={{marginTop:'6%'}}>
+                    <center style={{marginTop:'14%'}}>
                             <h3 style={{fontSize:'12px'}}>Your carbon emission score trended over time</h3>
                         </center>
                     </div>
