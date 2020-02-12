@@ -42,7 +42,10 @@ const config = {
     plugins: [
         new CopyPlugin([
             {from:'./index.html',to:'./'}
-        ])
+        ]),
+        new CopyPlugin([
+         {from:'./src/images',to:'./images'}
+     ])
     ]
  }
  
